@@ -1,6 +1,6 @@
 {
     "name": "Filmweb.pl - Ratings in filmography",
-    "description": "Adds movies ratings in actors filmography",
+    "description": "Adds movies ratings in filmography",
     "version": "1.0",
     "icons": {
       "128": "128.png"
