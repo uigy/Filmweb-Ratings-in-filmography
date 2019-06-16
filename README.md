@@ -1,4 +1,4 @@
-# Filmweb - Ratings in filmography (Chrome extension)
+# Filmweb.pl - Ratings in filmography (Chrome extension)
 
 Extension adds rating next to title of the movie in actors filmography.
 
