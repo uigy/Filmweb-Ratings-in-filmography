@@ -8,9 +8,9 @@ function getPage(callback, url){
 function addMovieRating (element, url) {
     getPage(function(data){
         var response = data.toString();
-        var firstIndex = response.indexOf("communityRateInfo:") + 19;
-        var rating = response.substring(firstIndex, firstIndex + 3);
-        var reg = /[0-9][,][0-9]/;
+        var firstIndex = response.indexOf("data-rate=") + 11;
+        var rating = parseFloat(response.substring(firstIndex, firstIndex + 5)).toFixed(1);
+        var reg = /[0-9][.][0-9]/;
         if(reg.test(rating)) {
             $( "<p style=\"display:inline-block; margin-right:5px;\">\(<span style=\"font-weight: bold\">" + rating + "</span>)</p>" ).insertBefore(element);
         }
